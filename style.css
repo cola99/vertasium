@@ -1,0 +1,122 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.navbar
+{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #ececec;
+	width: 100%;
+	height: 70px;
+	z-index: 1;
+	box-shadow: 0px 1px 10px grey;
+}
+
+.nav
+{
+	display: flex;
+	justify-content: right;
+	list-style: none;
+	margin-right: 15%;
+}
+
+.logo
+{
+	flex: 1 1 auto;
+	margin-left: 10%;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+a
+{
+	margin: 15px;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:hover
+{
+	color: #f6546a;
+}
+
+.banner-area
+{
+	position: relative;
+	background-image: url('https://i.imgur.com/IKIt663.jpg');
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.about-area, .contact-area, .shop-area, .other-area
+{
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row
+	width: 100%;
+	height: 700px;
+}
+
+.text-part
+{
+	width: 65%;
+	height: 80%;
+}
+
+h1
+{
+	font-size: 50px;
+}
+
+p
+{
+	font-size: 24px;
+	line-height: 50px;
+}
+
+.about-area, .shop-area
+{
+	background-color: #fff;
+}
+
+.contact-area, .other-area
+{
+	background-color: #222222;
+	color: #fff;
+}
+
+html
+{
+	scroll-behavior: smooth;
+}
